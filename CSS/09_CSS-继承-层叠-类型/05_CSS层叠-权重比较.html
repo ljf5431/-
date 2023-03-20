@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    div {
+      color: red !important; /*最高权重 10000*/
+    }
+    /*id选择器权重：100*/
+    #main {
+      color: yellow;
+    }
+    /*类选择器权重：10*/
+    .box {
+      color: blue;
+    }
+    /*元素选择器权重：1*/
+    div {
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <!--内联样式权重：1000-->
+  <div id="main" class="box" style="color: #f39a9a">我是div</div>
+</body>
+</html>

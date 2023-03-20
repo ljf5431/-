@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    .box {
+      width: 500px;
+      background-color: red;
+      color: white;
+    }
+    /*针对于首行文本设置属性*/
+    .box::first-line {
+      color: yellow;
+      font-size: 20px;
+    }
+    /*针对于首字母设置属性*/
+    .box::first-letter {
+      color: blueviolet;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    也是太阳系中直径、
+    质量和密度最大的类地行星，距离太阳1.5亿公里。地球
+    自西向东自转，同时围绕太阳公转。现有40~46亿岁，
+    [1] 它有一个天然卫星——月球，二者组成一个天体系统
+    ——地月系统。46亿年以前起源于原始太阳星云。
+  </div>
+
+</body>
+</html>

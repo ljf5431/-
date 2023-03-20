@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    /*不使用伪元素在元素前后插入内容*/
+    .before {
+      color: red;
+    }
+    .after {
+      color: blue;
+    }
+    /* 使用伪元素在元素前插入内容 */
+    .item::before {
+      content: '321';
+      color: blue;
+    }
+    /* 使用伪元素在元素后插入内容 */
+    .item::after {
+      /*content: 'cba';*/
+      content: url("../images/hot_icon.svg");
+      color: red;
+    }
+    /* 伪元素的补充 */
+    .box4::after {
+      content: '';/*content不能省略*/
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <span class="before">123</span>
+    我是div1元素
+    <span class="after">456</span>
+  </div>
+
+  <!-- w=伪元素方案 -->
+  <div class="box2 item">我是div2元素</div>
+  <div class="box3 item">我是div3元素</div>
+  <!-- 伪元素的补充 -->
+  <div class="box4">我是div4元素</div>
+
+</body>
+</html>

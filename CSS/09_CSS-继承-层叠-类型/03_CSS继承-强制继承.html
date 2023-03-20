@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    div.box {
+      color: red;/*默认继承*/
+      border: 2px solid purple;
+    }
+    .box p {
+      border: inherit;/*强制继承父元素设置的属性*/
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>我是p</p>
+    <h1>我是h1</h1>
+  </div>
+</body>
+</html>

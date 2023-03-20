@@ -1,0 +1,8 @@
+/*css文件的主入口：集成多个css文件夹*/
+/*url为css的函数*/
+@import url(style.css);
+@import url(test.css);
+/*无区别*/
+/*@import "style.css";*/
+/*@import "test.css";*/
+

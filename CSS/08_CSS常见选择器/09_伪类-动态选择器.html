@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    /*a元素链接从未访问过时*/
+    a:link {
+      color: chocolate;
+    }
+    /*a元素链接被访问过时*/
+    a:visited {
+      color: aqua;
+    }
+    /*元素获取焦点时*/
+    a:focus {
+      color: red;
+    }
+    /*鼠标悬停在元素上时*/
+    a:hover {
+      color: rgba(40, 180, 133, 0.8);
+    }
+    /*点击下去，但还没松手时*/
+    a:active {
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://www.mi.com">小米</a>
+  <a href="https://www.baidu.com">百度</a>
+
+</body>
+</html>

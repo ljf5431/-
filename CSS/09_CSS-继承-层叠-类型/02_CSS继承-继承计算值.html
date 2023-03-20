@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    div.box {
+      color: red;
+      /* 相对了于自身字体(父元素的字体) */
+      font-size: 2em;/* 浏览器默认16px 2em = 32px */
+    }
+    p {
+      /*正常情况 相对于父元素的字体应该是64px
+      由于是继承过来的是计算值也就是32px 而不是属性值2em*/
+      /*font-size: 2em;*/
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>我是p</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    .box1 {
+      /*尺寸计算公式：width = 内容的宽度 height = 内容的高度*/
+      box-sizing: content-box;
+
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      padding: 30px;
+      border: 10px solid royalblue;
+    }
+    .box2 {
+      /*尺寸计算公式：盒子宽度/高度=border+padding+内容的宽度/高度*/
+      box-sizing: border-box;
+
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      padding: 30px;
+      border: 10px solid royalblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>

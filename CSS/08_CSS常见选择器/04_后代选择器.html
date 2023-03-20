@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    /*选中home类下的所有span*/
+    .home span {
+      color: red;
+    }
+    /*选中home类的直接子代span*/
+    .home>span {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <span>嘎嘎嘎</span>
+    <div class="box">
+      <span>嘿嘿嘿1</span>
+    </div>
+
+    <div class="content">
+      <div class="desc">
+        <span>嘿嘿嘿2</span>
+      </div>
+    </div>
+    <p>哈哈哈</p>
+  </div>
+  <span>嘎嘎嘎</span>
+
+</body>
+</html>

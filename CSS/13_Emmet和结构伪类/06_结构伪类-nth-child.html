@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  /* 选中首个元素 */
+  ul li:nth-child(1) {
+    color: red;
+  }
+  /* 选中偶数元素 */
+  ul li:nth-child(2n) {
+    color: #f39a9a;
+  }
+  /* 选中奇数元素 */
+  ul li:nth-child(2n+1) {
+    color: #048063;
+  }
+  /* 四个一轮 */
+  div>div:nth-child(4n+1){
+    color: #ff6700;
+  }
+  div>div:nth-child(4n+2){
+    color: aquamarine;
+  }
+  div>div:nth-child(4n+3){
+    color: darkorchid;
+  }
+
+</style>
+<body>
+<ul>
+  <li>列表元素1</li>
+  <li>列表元素2</li>
+  <li>列表元素3</li>
+  <li>列表元素4</li>
+  <li>列表元素5</li>
+  <li>列表元素6</li>
+</ul>
+
+<div>
+  <div>列表元素1</div>
+  <div>列表元素2</div>
+  <div>列表元素3</div>
+  <div>列表元素4</div>
+  <div>列表元素5</div>
+  <div>列表元素6</div>
+  <div>列表元素7</div>
+  <div>列表元素8</div>
+  <div>列表元素9</div>
+  <div>列表元素10</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    .box1 {
+      /*color: #ff0000;*/
+      /*修改透明度 不会影响子元素*/
+      color: rgba(255, 0, 0, 0);
+    }
+    .box2 {
+      /*存在继承性 会影响子元素*/
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">div元素1</div>
+  <div>div元素2</div>
+  <div class="box2">div元素3</div>
+  <div>div元素4</div>
+</body>
+</html>

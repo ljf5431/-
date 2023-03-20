@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: orange;
+
+      /* box要执行moveAnim的动画 */
+      animation-name: moveAnim;
+      /* 动画执行时间 */
+      animation-duration: 3s;
+      /* 动画的速度曲线 */
+      animation-timing-function: ease-in-out;
+
+      /* 其他属性: */
+      /* 动画延迟时间 */
+       animation-delay: 2s;
+      /* 动画执行的次数 */
+       animation-iteration-count: 2;
+      /* 执行顺序：0-100或者100-0 */
+      /* animation-direction: reverse; */
+      /* 元素停留在动画的哪一个位置 */
+      /* animation-fill-mode: forwards;*/
+
+      /* js动态修改动画的状态 播放或者暂停 */
+      /* animation-play-state: paused; */
+      /* 要执行动画的标识名-持续时间-动画的速度曲线-延迟时间-执行次数-执行顺序-元素停留位置 */
+      animation: moveAnim 3s linear 1s 2 normal forwards;
+    }
+    /*
+    @keyframes 定义动画的关键帧
+    moveAnim 自定义的动画标识名
+    */
+    @keyframes moveAnim {
+      0% {
+        transform: translate(0, 0) scale(0.5, 0.5);
+      }
+      25% {
+        transform: translate(0, 200px) scale(3, 3);
+      }
+      50% {
+        transform: translate(400px, 200px) scale(1, 1);
+      }
+      75% {
+        transform: translate(400px, 0) scale(0.5, 0.5);
+      }
+      100% {
+        transform: translate(0, 0) scale(1, 1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="box">
+
+  </div>
+
+</body>
+</html>
