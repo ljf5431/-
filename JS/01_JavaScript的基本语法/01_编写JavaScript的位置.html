@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  
+
   <!-- 1.编写位置一: 编写在html内部(了解) -->
   <a href="#" onclick="alert('百度一下')">百度一下</a>
   <a href="javascript: alert('百度一下')">百度一下</a>
@@ -20,7 +20,8 @@
   <a class="google" href="#">Google一下</a>
 
   <script>
-    var googleAEl = document.querySelector(".google")
+    // 获取元素
+    let googleAEl = document.querySelector(".google")
     googleAEl.onclick = function() {
       alert("Google一下")
     }
